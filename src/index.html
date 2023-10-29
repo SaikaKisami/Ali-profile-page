@@ -13,6 +13,7 @@
       href="https://fonts.cdnfonts.com/css/akira-expanded"
       rel="stylesheet"
     />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div>
@@ -22,12 +23,12 @@
           style="padding-top: 30px; padding-bottom: 30px; box-shadow: black"
         >
           <div class="d-flex gap-5">
-            <img
+            <a href="#"><img
               src="../src/pics/logo.svg"
               alt=""
               srcset=""
               style="width: 35px"
-            />
+            /></a>
             <div class="d-flex gap-3">
               <div class="dropdown">
                 <span
@@ -105,9 +106,10 @@
                 padding: 10px;
               "
             >
-              <img src="../src/pics/sun.svg" alt="" />
+              <img style="cursor: pointer;" src="../src/pics/sun.svg" alt="" />
             </div>
 
+            <div class="dropdown">
             <div
               style="
                 width: 45px;
@@ -117,12 +119,49 @@
                 display: flex;
                 border-radius: 100%;
               "
+              class="dropdown-toggle"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
             >
               <img
                 src="../src/pics/avatar-1.jpg"
                 alt=""
-                style="border-radius: 100%"
+                style="border-radius: 100%;cursor: pointer;"
               />
+            </div>
+            <div class="dropdown-menu" style="width: 200px;">
+              <div class="d-flex gap-2 align-items-center" style="padding: 10px;">
+                <img style="
+                width: 45px;
+                height: 45px;
+                border-color: transparent;
+                background-color: transparent;
+                display: flex;
+                border-radius: 100%;
+              " src="../src/pics/avatar-1.jpg" alt="">
+              <div>
+                <h3 style="font-size: 20px;">Rick Astley</h3>
+                <h4 style="font-size: 16px;color: #606060;">login@or.die</h4>
+              </div>
+              </div>
+              <hr class="dropdown-divider">
+
+              <h1 style="padding: 5px 10px;" class="d-flex hoverText align-items-center">
+                <svg style="width: 15px;font-size:500;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                </svg>
+
+                <span style="font-size: 15px;">
+                  Register
+                </span>
+              </h1>
+              <h1 style="padding: 5px 10px;" class="d-flex hoverText align-items-center">
+                <svg style="width: 15px;font-size:500;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                </svg>
+
+                <span style="font-size: 15px;">Login</span></h1>
+            </div>
             </div>
           </div>
         </nav>
@@ -243,7 +282,7 @@
               alt="aboutmuhamed"
             />
             <!-- stats -->
-            <div class="w-100 bg-white" style="">
+            <div class="w-100 bg-white">
               <div
                 class="d-flex justify-content-between px-3 py-3"
                 style="font-family: 'akira Expanded'"
@@ -662,299 +701,364 @@
         </div>
       </div>
       <!-- accordion fight record -->
-      <div class="" style="background-color: #f8f8f8; padding: 50px 100px">
-        <h2 style="font-size: 24px; font-family: 'akira expanded'">
-          Muhammad Ali Fight Record
-        </h2>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                Muhammad Ali Fight records
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Opponent</th>
-                      <th scope="col">Result</th>
-                      <th scope="col">Via</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">60</th>
-                      <td>Oct 2, 1980</td>
-                      <td>38</td>
-                      <td>Larry Holmes</td>
-                      <td>Loss</td>
-                      <td>RTD10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">59</th>
-                      <td>Setp 15, 1978</td>
-                      <td>36</td>
-                      <td>Leon Spinks</td>
-                      <td>Win</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">58</th>
-                      <td>Sept 15, 1978</td>
-                      <td>36</td>
-                      <td>Leon Spinks</td>
-                      <td>Loss</td>
-                      <td>SD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">57</th>
-                      <td>Sept 29, 1977</td>
-                      <td>35</td>
-                      <td>Earnie Shavers</td>
-                      <td>Win</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">61</th>
-                      <td>Dec 11, 1981</td>
-                      <td>39</td>
-                      <td>Trevor Berbick</td>
-                      <td>Loss</td>
-                      <td>UD</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+      <div
+        class="d-flex flex-column gap-2"
+        style="background-color: #f8f8f8; padding: 50px 100px"
+      >
+        <div
+          class="d-flex align-items-center justify-content-between border-bottom"
+        >
+          <h2 style="font-size: 24px; font-family: 'akira expanded'">
+            Muhammad Ali Fight Record
+          </h2>
+          <h1
+            class=""
+            style="
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              color: #0079e9;
+            "
+            type="button"
+            aria-expanded="false"
+            onclick="toggleText()"
+            id="textBtn"
+          >
+            <span id="spanText">Show all</span>
+            <img src="../src/pics/gridicons_dropdown.svg" alt="" />
+          </h1>
+        </div>
+
+        <table style="display: none; width: 100%" class="table" id="toShow">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Date</th>
+              <th scope="col">Age</th>
+              <th scope="col">Opponent</th>
+              <th scope="col">Result</th>
+              <th scope="col">Via</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">60</th>
+              <td>Oct 2, 1980</td>
+              <td>38</td>
+              <td>Larry Holmes</td>
+              <td>Loss</td>
+              <td>RTD10</td>
+            </tr>
+            <tr>
+              <th scope="row">59</th>
+              <td>Setp 15, 1978</td>
+              <td>36</td>
+              <td>Leon Spinks</td>
+              <td>Win</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">58</th>
+              <td>Sept 15, 1978</td>
+              <td>36</td>
+              <td>Leon Spinks</td>
+              <td>Loss</td>
+              <td>SD</td>
+            </tr>
+            <tr>
+              <th scope="row">57</th>
+              <td>Sept 29, 1977</td>
+              <td>35</td>
+              <td>Earnie Shavers</td>
+              <td>Win</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">56</th>
+              <td>May 16, 1977</td>
+              <td>35</td>
+              <td>Alfredo Evangelista</td>
+              <td>Win</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+            <tr>
+              <th scope="row">61</th>
+              <td>Dec 11, 1981</td>
+              <td>39</td>
+              <td>Trevor Berbick</td>
+              <td>Loss</td>
+              <td>UD</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div
+          class="d-flex align-items-center justify-content-between border-bottom"
+        >
+          <h2 style="font-size: 24px; font-family: 'akira expanded'">
+            BOXERS OF THE GOLD AGE
+          </h2>
+          <h1
+            class=""
+            style="
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              color: #0079e9;
+            "
+            type="button"
+            aria-expanded="false"
+            onclick="toggleImage()"
+            id="imageBtn"
+          >
+            <span id="imageSpan">Show all</span>
+            <img src="../src/pics/gridicons_dropdown.svg" alt="" />
+          </h1>
+        </div>
+
+        <div id="imageDiv" style="display: none">
+          <!--images div-->
+          <div>
+            <img src="../src/pics/img1.avif" alt="" />
           </div>
         </div>
       </div>
-    </div>
+
+      <div style="padding: 0 5%;">
+        <div class="d-flex" style="width: 100%">
+          <div style="width: 30%; padding: 7% 2%;">
+            <a href="#"><img src="../src/pics/logo.svg" alt="" /></a>
+          </div>
+
+          <div style="padding-top: 2%">
+            <ul style="color: #606060; list-style: none;display: flex;flex-direction: column;gap: 10px;">
+              <a href="#" style="color: #606060;text-decoration: none;"><li>About</li></a>
+              <a href="#" style="color: #606060;text-decoration: none;"><li>Blog</li></a>
+              <a href="#" style="color: #606060;text-decoration: none;"><li>Archive</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex gap-3 border-bottom" style="padding-bottom: 20px;padding-left: 2%;">
+          <a href="#"><img style="width: 15px;" src="../src/pics/fb.svg" alt="" /></a>
+          <a href="#"><img style="width: 15px;" src="../src/pics/ig.svg" alt="" /></a>
+          <a href="#"><img style="width: 15px;" src="../src/pics/twitter.svg" alt="" /></a>
+          <a href="#"><img style="width: 15px;" src="../src/pics/linkedin.svg" alt="" /></a>
+          <a href="#"><img style="width: 15px;" src="../src/pics/pinterest.svg" alt="" /></a>
+          <a href="#"><img style="width: 15px;" src="../src/pics/youtube.svg" alt="" /></a>
+        </div>
+        <div style="padding: 20px 2%;color: #606060;" class="d-flex justify-content-between">
+          <!-- bottom -->
+          <h2 style="font-size: 1rem;">@ SERP</h2>
+          <div>
+            <ul class="d-flex align-items-center gap-4" style="list-style: none;">
+              <a href="#" style="color: #606060;text-decoration: none;"><li>Privacy</li></a>
+              <a href="#" style="color: #606060;text-decoration: none;"><li>Terms</li></a>
+              <a href="#" style="color: #606060;text-decoration: none;"><li>Affliate Disclosure</li></a>
+              <a href="#" style="color: #606060;text-decoration: none;"><li>DMCA</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     <script src="../style/boot.js"></script>
   </body>
