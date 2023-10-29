@@ -28,4 +28,8 @@ const toggleImage = () => {
   imageDiv.style.display === "none"
     ? (imageDiv.style.display = "block")
     : (imageDiv.style.display = "none");
+
+  imageDiv.style.display === "none"
+    ? (imageSpan.innerText = "Show All")
+    : (imageSpan.innerText = "Show Less");
 };

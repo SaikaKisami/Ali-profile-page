@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.hoverText {
+    cursor: pointer;
+}
+
 .hoverText:hover {
-    color: ;
+    color: #005de9;
+    background-color: #f8f8f8;
+}
+
+.hoverTextOnly:hover {
+    color: #005de9;
+}
+
+.dropdown-toggle-icon::after {
+    display: none;
 }
