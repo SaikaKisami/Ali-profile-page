@@ -5,17 +5,28 @@ const toggleText = () => {
   // get table
   const table = document.getElementById("toShow");
 
-  // get the span
   const spanText = document.getElementById("spanText");
 
-  table.style.display === "none"
-    ? (table.style.display = "table")
-    : (table.style.display = "none");
+  const extraRows = document.querySelectorAll(".extraRow");
 
-  table.style.display === "none"
-    ? // set to show more
-      (spanText.innerText = "Show All")
-    : (spanText.innerText = "Show Less");
+  if (
+    extraRows[0].style.display === "none" ||
+    extraRows[0].style.display === ""
+  ) {
+    extraRows.forEach((row) => (row.style.display = "table-row"));
+    spanText.innerText = "Show Less";
+  } else {
+    extraRows.forEach((row) => (row.style.display = "none"));
+    spanText.innerText = "Show All";
+  }
+};
+
+// Initial setup to show only the first 10 rows
+window.onload = () => {
+  const extraRows = document.querySelectorAll(".extraRow");
+  const extraImages = document.querySelectorAll(".extraImages");
+  extraRows.forEach((row) => (row.style.display = "none"));
+  extraRows.forEach((row) => (row.style.display = "none"));
 };
 
 const toggleImage = () => {
@@ -25,11 +36,16 @@ const toggleImage = () => {
   // get the span
   const imageSpan = document.getElementById("imageSpan");
 
-  imageDiv.style.display === "none"
-    ? (imageDiv.style.display = "block")
-    : (imageDiv.style.display = "none");
+  const extraImages = document.querySelectorAll(".extraImages")
+   if (
+     extraImages[0].style.display === "none" ||
+     extraImages[0].style.display === ""
+   ) {
+     extraImages.forEach((row) => (row.style.display = "table-row"));
+     imageSpan.innerText = "Show Less";
+   } else {
+     extraImages.forEach((row) => (row.style.display = "none"));
+     imageSpan.innerText = "Show All";
+   }
 
-  imageDiv.style.display === "none"
-    ? (imageSpan.innerText = "Show All")
-    : (imageSpan.innerText = "Show Less");
-};
+}
