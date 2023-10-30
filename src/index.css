@@ -20,3 +20,52 @@
 .dropdown-toggle-icon::after {
     display: none;
 }
+.dropdown-toggle{
+    color: black !important;
+}
+.navbar-toggler{
+    justify-self: end !important;
+}
+
+.mainHeader{
+    font-family: 'Akira Expanded';
+    font-weight: 800;
+    font-size: 70px;
+}
+.subheader{
+    font-family: 'akira Expanded';
+    font-size: 800;
+    font-size: 40px;
+    color: #909090;
+    text-align: center;
+}
+.headerImageContainer{
+ width: 30%;
+ height: 100%;
+}
+.headerContainer{
+    width: 70%;
+    height: 100%;
+}
+.mainContainer{
+    height: calc(100vh - 105.75px);
+}
+@media  (max-width: 991px) {
+    .mainHeader{
+        font-size: 45px;
+    }
+    .subheader{
+        font-size: 35px;
+    }
+    .headerImageContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .headerContainer{
+        width: 100%;
+        height: 50%;
+    }
+    .mainContainer{
+       height:calc((100vh - 105.75px)/2) ; 
+    }
+}
