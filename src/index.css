@@ -157,7 +157,136 @@
 .extraImages {
   display: none;
 }
+
+tbody>tr>td:nth-child(4) {
+  color: RGB(94, 63, 203);
+}
+
+tbody>tr>td {
+  color: RGB(100, 116, 139);
+}
+
+tr {
+  border-bottom: rgb(226, 232, 240);
+}
+
+.trFirst {
+  border-bottom: rgb(226, 232, 240) !important;
+
+}
+
+tr:nth-child(10) {
+  border-bottom: #7D7D7D;
+}
+
+tr:last-child {
+  border-bottom: #7D7D7D;
+}
+
+thead>tr {
+  color: RGB(100, 116, 139);
+}
+
+tbody>tr>th {
+  color: RGB(100, 116, 139);
+  font-weight: 500;
+}
+
 /* media screens */
+
+@media (min-width: 1500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar-display {
+    width: 3791px;
+  }
+
+  .second-section {
+    width: 5791.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-card-container {
+    width: 5791.75px;
+    margin-top: 5%;
+  }
+
+  .third-section {
+    width: 5791.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContainer {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .famous-card {
+    width: auto;
+  }
+
+  .professional-section {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .accordion-container {
+    width: 5791.75px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 2%;
+  }
+
+  .image-container-display {
+    margin-top: 5%;
+  }
+
+  .bottom-nav {
+    width: 5791.75px;
+  }
+
+  .legacy-container {
+
+    width: 5791.75px;
+  }
+
+  .image-legacy {
+    width: 100% !important;
+  }
+
+  .professional-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px !important;
+  }
+
+  .legacy-text-container {
+    display: flex;
+    height: 4187.29px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media (max-width: 991px) {
   .mainHeader {

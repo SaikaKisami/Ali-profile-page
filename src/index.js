@@ -9,14 +9,18 @@ const toggleText = () => {
 
   const extraRows = document.querySelectorAll(".extraRow");
 
+  const row10 = document.getElementById("row10");
+
   if (
     extraRows[0].style.display === "none" ||
     extraRows[0].style.display === ""
   ) {
     extraRows.forEach((row) => (row.style.display = "table-row"));
+    row10.style.borderBottom = "rgb(226, 232, 240)";
     spanText.innerText = "Show Less";
   } else {
     extraRows.forEach((row) => (row.style.display = "none"));
+    row10.style.borderBottom = "#7D7D7D";
     spanText.innerText = "Show All";
   }
 };

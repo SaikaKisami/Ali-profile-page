@@ -18,7 +18,7 @@
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-lg px-4">
+      <nav class="navbar navbar-expand-lg px-4 nav-bar-display">
         <div class="container-fluid px-0">
           <a class="navbar-brand" href="/"
             ><img
@@ -415,7 +415,7 @@
       </div>
       <!-- about muhammed ali -->
       <div
-        class="position-relative d-lg-flex justify-content-between"
+        class="position-relative second-section d-lg-flex justify-content-between"
         style="width: 100%; background: #f8f8f8"
       >
         <div class="d-flex px-5 py-5 gap-5 aboutContainer">
@@ -603,7 +603,7 @@
       </div>
       <!--famous section -->
       <div
-        class="d-lg-flex justify-content-between"
+        class="d-lg-flex third-section justify-content-between"
         style="background-color: #f8f8f8"
       >
         <div class="d-flex justify-content-center py-5 famous-card-container">
@@ -697,7 +697,7 @@
       </div>
       <!--legacy and awards -->
       <div
-        class="d-block d-lg-flex justify-content-between position-relative pt-5"
+        class="d-block legacy-container d-lg-flex justify-content-between position-relative pt-5"
         style="background-color: #f8f8f8"
       >
         <div class="text-center position-relative legacy-image-container">
@@ -880,14 +880,14 @@
         <div
           class="d-flex gap-5 gap-lg-0 flex-column justify-content-between align-items-center professional-img-container"
         >
-          <img class="w-75" src="./pics/img1.png" alt="img1" />
-          <img class="w-75" src="./pics/img2.png" alt="img2" />
-          <img class="w-75" src="./pics/img3.png" alt="img3" />
+          <img class="w-75 image-legacy" src="./pics/img1.png" alt="img1" />
+          <img class="w-75 image-legacy" src="./pics/img2.png" alt="img2" />
+          <img class="w-75 image-legacy" src="./pics/img3.png" alt="img3" />
         </div>
       </div>
       <!-- accordion fight record -->
       <div
-        class="d-flex flex-column gap-2"
+        class="d-flex flex-column gap-2 accordion-container"
         style="background-color: #f8f8f8; padding: 50px 50px"
       >
         <div
@@ -915,12 +915,12 @@
         </div>
         <div class="overflow-auto" style="width: 100%">
           <table
-            style="min-width: 1271px"
+            style="min-width: 1271px;border: 1.5px solid #ccc;background-color: #f1f5f9;"
             class="table"
             id="toShow"
           >
-            <thead>
-              <tr>
+            <thead class="trFirst">
+              <tr class="trFirst">
                 <th scope="col">#</th>
                 <th scope="col">Date</th>
                 <th scope="col">Age</th>
@@ -1002,7 +1002,7 @@
                 <td>Loss</td>
                 <td>UD</td>
               </tr>
-              <tr>
+              <tr id="row10">
                 <th scope="row">61</th>
                 <td>Dec 11, 1981</td>
                 <td>39</td>
@@ -1183,7 +1183,7 @@
         </div>
 
         <div
-          class="d-flex align-items-center justify-content-between border-bottom"
+          class="d-flex align-items-center justify-content-between image-container-display border-bottom"
         >
           <h2 style="font-size: 24px; font-family: 'akira expanded'">
             BOXERS OF THE GOLD AGE
@@ -1366,7 +1366,7 @@
         </div>
       </div>
 
-      <div style="padding: 0 5%">
+      <div style="padding: 0 5%" class=" bottom-nav">
         <div class="d-flex" style="width: 100%">
           <div style="width: 30%; padding: 7% 2%">
             <a href="#"><img src="../src/pics/logo.svg" alt="" /></a>
