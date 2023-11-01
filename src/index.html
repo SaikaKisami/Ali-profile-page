@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/boot.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
     <link
       href="https://fonts.cdnfonts.com/css/akira-expanded"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
@@ -18,20 +17,103 @@
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-lg px-4 nav-bar-display">
-        <div class="container-fluid px-0">
-          <a class="navbar-brand" href="/"
-            ><img
-              src="./pics/logo.svg"
-              style="width: 35px"
-              boxing=""
-              undefeated=""
-              class="logo-inverse"
-              height="75"
-          /></a>
+      <nav class="bg-white border-b border-gray-200 lg:px-4 flex">
+        <div
+          class="container flex items-center py-5 justify-between items-center mx-auto px-0"
+        >
+          <div class="flex items-center gap-10">
+            <a class="flex items-center" href="/"
+              ><img
+                src="./pics/logo.svg"
+                style="width: 35px"
+                boxing=""
+                undefeated=""
+                class="logo-inverse"
+                height="75"
+            /></a>
+            <ul class="flex items-center gap-5">
+              <li class="flex items-center gap-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarSingle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-bs-display="static"
+                  >Blog</a
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarSingle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-bs-display="static"
+                  >Boxers</a
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-1">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-bs-display="static"
+                  >Divisions</a
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
 
-          <div class="ms-auto d-flex align-items-center order-lg-3">
-            <ul class="navbar-nav navbar-right-wrap mx-2 flex-row">
+          <div>
+            <ul class="flex items-center gap-5">
               <div class="mx-2">
                 <a
                   href="#"
@@ -71,151 +153,10 @@
                   </div>
                 </a>
                 <!-- user drop down -->
-                <div
-                  class="dropdown-menu dropdown-menu-end position-absolute mx-3"
-                >
-                  <div class="dropdown-item">
-                    <div class="d-flex">
-                      <div
-                        class="avatar avatar-md avatar-indicators avatar-online"
-                      >
-                        <img
-                          alt="avatar"
-                          src="./pics/avatar-1.jpg"
-                          style="width: 35px"
-                          class="rounded-circle"
-                        />
-                      </div>
-                      <div class="ms-3 lh-1">
-                        <p class="mb-1" id="profile-nav-name">Rick Astley</p>
-                        <p class="mb-1" id="profile-nav-username" hidden="">
-                          @rickastley
-                        </p>
-                        <p class="mb-0 text-muted" id="profile-nav-email">
-                          login@or.die
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown-divider"></div>
-                  <ul class="list-unstyled">
-                    <li id="logged-in" hidden="">
-                      <a
-                        class="dropdown-item"
-                        href="/account"
-                        id="logged-in"
-                        hidden=""
-                      >
-                        <svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8"
-                            stroke="#000000"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                        Profile</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="/account/bookmarks"
-                        id="logged-in"
-                        hidden=""
-                      >
-                        <svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M3 12L15 12M3 12L7 8M3 12L7 16"
-                            stroke="#000000"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                        Bookmarks</a
-                      >
-                    </li>
-                    <div class="dropdown-divider"></div>
-                    <li id="logged-out">
-                      <a class="dropdown-item" id="register" href="/register"
-                        ><svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 18L14 18M17 15V21M4 21C4 17.134 7.13401 14 11 14C11.695 14 12.3663 14.1013 13 14.2899M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
-                            stroke="#000000"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path></svg
-                        >Register</a
-                      >
-                    </li>
-                    <li id="logged-out">
-                      <a class="dropdown-item" id="login" href="/login"
-                        ><svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8"
-                            stroke="#000000"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                        Login</a
-                      >
-                    </li>
-                    <div class="dropdown-divider"></div>
-                    <li id="logged-in" hidden="">
-                      <a class="dropdown-item" id="logout" href="/logout"
-                        ><svg
-                          width="15"
-                          height="15"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M3 12L15 12M3 12L7 8M3 12L7 16"
-                            stroke="#000000"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                        Logout</a
-                      >
-                    </li>
-                  </ul>
-                </div>
               </li>
             </ul>
           </div>
-          <div>
+          <div class="hidden">
             <button
               class="navbar-toggler"
               type="button"
@@ -243,153 +184,13 @@
               </span>
             </button>
           </div>
-          <div
-            class="navbar-collapse justify-content-between px-4 collapse"
-            id="navbar-default"
-            style=""
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarSingle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  data-bs-display="static"
-                  >Blog</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/blog/">Blog</a></li>
-                  <hr class="dropdown-divider" />
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarSingle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  data-bs-display="static"
-                  >Boxers</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/boxers/">Boxers</a></li>
-                  <hr class="dropdown-divider" />
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <span
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  data-bs-display="static"
-                  >Divisions</span
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/boxing-weight-classes/"
-                      >Weight Classes</a
-                    >
-                  </li>
-                  <hr class="dropdown-divider" />
-                  <li>
-                    <a class="dropdown-item" href="/heavyweight/"
-                      >Heavyweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/cruiserweight/"
-                      >Cruiserweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/light-heavyweight/"
-                      >Light Heavyweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-middleweight/"
-                      >Super Middleweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/middleweight/"
-                      >Middleweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-welterweight/"
-                      >Super Welterweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/welterweight/"
-                      >Welterweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-lightweight/"
-                      >Super Lightweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/lightweight/"
-                      >Lightweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-featherweight/"
-                      >Super Featherweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/featherweight/"
-                      >Featherweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-bantamweight/"
-                      >Super Bantamweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/bantamweight/"
-                      >Bantamweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/super-flyweight/"
-                      >Super Flyweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/flyweight/">Flyweight</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/light-flyweight/"
-                      >Light Flyweight</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/minimumweight/"
-                      >Minimumweight</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
-      <div class="position-relative mainContainer">
-        <div class="d-block d-lg-flex h-100">
+
+      <div class="relative mainContainer">
+        <div class="block lg:flex" style="height: 100%;">
           <div
-            class="headerContainer d-none d-lg-flex justify-content-center align-items-center bg-dark"
+            class="headerContainer hidden lg:flex justify-center items-center bgcolor"
           >
             <div>
               <h1 class="mainHeader text-white text-center">MUHAMMAD ALI</h1>
@@ -397,10 +198,11 @@
             </div>
           </div>
           <div
-            class="headerImageContainer d-flex align-items-end justify-content-end bg-primary"
+            class="headerImageContainer flex items-end justify-end bg-blue-500"
           >
             <div
-              class="d-flex flex-column justify-content-center align-self-center d-lg-none bg-dark h-100 w-75"
+              class="flex flex-col justify-center items-center lg:hidden bgcolor"
+              style="height: 100%;width: 100%;"
             >
               <h1 class="mainHeader text-white text-center">MUHAMMAD ALI</h1>
               <h2 class="subheader">"THE GREATEST"</h2>
@@ -415,12 +217,12 @@
       </div>
       <!-- about muhammed ali -->
       <div
-        class="position-relative second-section d-lg-flex justify-content-between"
+        class="relative second-section lg:flex justify-between"
         style="width: 100%; background: #f8f8f8"
       >
-        <div class="d-flex px-5 py-5 gap-5 aboutContainer">
+        <div class="flex px-5 py-5 gap-5 aboutContainer">
           <div
-            class="d-flex flex-column align-items-center"
+            class="flex flex-col items-center"
             style="gap: 70px; width: 20px"
           >
             <img
@@ -429,7 +231,7 @@
               alt=""
             />
             <span
-              class="d-flex gap-2"
+              class="flex gap-2"
               style="
                 transform: rotate(90deg);
                 font-size: 16px;
@@ -438,7 +240,7 @@
               >Muhammad <span> Ali</span></span
             >
           </div>
-          <div class="d-flex flex-column gap-5 px-lg-5">
+          <div class="flex flex-col gap-5 lg:px-5">
             <h1
               style="
                 font-family: 'akira Expanded';
@@ -449,7 +251,7 @@
             >
               About Muhammad ALI
             </h1>
-            <div class="d-flex flex-column gap-3">
+            <div class="flex flex-col gap-3">
               <h3 style="font-size: 20px; font-weight: 400">
                 Muhammad Ali, born Cassius Marcellus Clay Jr. on January 17,
                 1942, was an American professional boxer and an activist.
@@ -472,37 +274,37 @@
         <!--  -->
         <div class="p-5 card-container">
           <!-- about card -->
-          <div class="bg-white position-relative">
+          <div class="bg-white relative">
             <img
               src="./pics/aboutmuhamed.png"
               alt="aboutmuhamed"
               class="aboutmuhamedImg"
             />
             <!-- stats -->
-            <div class="w-100 bg-white">
+            <div style="width: 100%;" class="bg-white">
               <div
-                class="d-flex justify-content-between px-3 py-3"
+                class="flex justify-between px-3 py-3"
                 style="font-family: 'akira Expanded'"
               >
-                <div class="d-flex flex-column align-items-center">
+                <div class="flex flex-col items-center">
                   <h4 class="m-0" style="font-size: 32px; color: #000">56</h4>
                   <h4 class="m-0" style="font-size: 15px; color: #2a9041">
                     WINS
                   </h4>
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="flex flex-col items-center">
                   <h4 class="m-0" style="font-size: 32px; color: #000">5</h4>
                   <h4 class="m-0" style="font-size: 15px; color: #c94a4a">
                     LOSES
                   </h4>
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="flex flex-col items-center">
                   <h4 class="m-0" style="font-size: 32px; color: #000">0</h4>
                   <h4 class="m-0" style="font-size: 15px; color: #bf9501">
                     DRAWS
                   </h4>
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="flex flex-col items-center">
                   <h4 class="m-0" style="font-size: 32px; color: #000">0</h4>
                   <h4 class="m-0" style="font-size: 15px; color: #606060">
                     KO%
@@ -510,7 +312,7 @@
                 </div>
               </div>
               <!-- others -->
-              <div class="d-flex justify-content-between px-3 mt-2">
+              <div class="flex justify-between px-3 mt-2">
                 <div>
                   <p style="font-size: 16px; font-weight: 500">
                     Debut:
@@ -545,12 +347,12 @@
       </div>
       <!-- another section -->
       <div
-        class="justify-content-between position-relative second-card-container"
+        class="justify-between relative second-card-container"
       >
         <div class="text-center image-container">
           <img src="./pics/muhamedaliFirst.png" alt="muhamedaliFirst" />
         </div>
-        <div class="d-flex justify-content-center text-container-wrapper">
+        <div class="flex justify-center text-container-wrapper">
           <!-- first in the world -->
           <div class="text-container">
             <h2
@@ -574,7 +376,7 @@
       </div>
       <!--blue section -->
       <div
-        class="d-block d-lg-flex justify-content-between text-white blue-section"
+        class="block lg:flex justify-between text-white blue-section"
       >
         <div class="blue-section-text">
           <h2 style="font-family: 'akira expanded'; font-size: 24px">
@@ -603,10 +405,10 @@
       </div>
       <!--famous section -->
       <div
-        class="d-lg-flex third-section justify-content-between"
+        class="lg:flex third-section justify-between"
         style="background-color: #f8f8f8"
       >
-        <div class="d-flex justify-content-center py-5 famous-card-container">
+        <div class="flex justify-center py-5 famous-card-container">
           <!-- famous card -->
           <div class="famous-card">
             <img style="width: 100%" src="./pics/famous.png" alt="famousImg" />
@@ -635,13 +437,13 @@
           </div>
         </div>
         <div
-          class="position-relative d-flex justify-content-end famous-text-container"
+          class="relative flex justify-end famous-text-container"
         >
           <div
-            class="bg-white end-0 py-5 px-3 d-flex justify-content-between famous-text"
+            class="bg-white end-0 py-5 px-3 flex justify-between famous-text"
           >
             <div
-              class="d-flex flex-column align-items-center"
+              class="flex flex-col items-center"
               style="gap: 70px; width: 5%"
             >
               <img
@@ -650,7 +452,7 @@
                 alt=""
               />
               <span
-                class="d-flex gap-2"
+                class="flex gap-2"
                 style="
                   transform: rotate(90deg);
                   font-size: 16px;
@@ -697,12 +499,12 @@
       </div>
       <!--legacy and awards -->
       <div
-        class="d-block legacy-container d-lg-flex justify-content-between position-relative pt-5"
+        class="block legacy-container lg:flex justify-between relative pt-5"
         style="background-color: #f8f8f8"
       >
-        <div class="text-center position-relative legacy-image-container">
+        <div class="text-center relative legacy-image-container">
           <img
-            class="position-absolute start-0"
+            class="absolute start-0"
             style="z-index: 1"
             src="./pics/grid.svg"
             alt="grid"
@@ -735,9 +537,9 @@
           </p>
         </div>
         <div class="text-white legacy-blue-section">
-          <div class="d-flex justify-content-between py-4 ps-3">
+          <div class="flex justify-between py-4 ps-3">
             <div
-              class="d-flex flex-column align-items-center"
+              class="flex flex-col items-center"
               style="gap: 70px; width: 20px"
             >
               <img
@@ -746,7 +548,7 @@
                 alt=""
               />
               <span
-                class="d-flex gap-2"
+                class="flex gap-2"
                 style="
                   transform: rotate(90deg);
                   font-size: 16px;
@@ -777,9 +579,9 @@
       </div>
       <!--professional boxing careers  -->
       <div
-        class="d-flex flex-column-reverse flex-column flex-lg-row justify-content-center justify-content-lg-between pt-5 professional-section"
+        class="flex flex-col-reverse flex-col lg:flex-row justify-center lg:justify-between pt-5 professional-section"
       >
-        <div class="px-3 mt-5 mt-lg-0 professional-text-wrapper">
+        <div class="px-3 mt-5 lg:mt-0 professional-text-wrapper">
           <h2 style="font-size: 24px; font-family: 'akira expanded'">
             Professional Boxing Career
           </h2>
@@ -878,7 +680,7 @@
           </p>
         </div>
         <div
-          class="d-flex gap-5 gap-lg-0 flex-column justify-content-between align-items-center professional-img-container"
+          class="flex gap-5 lg:gap-0 flex-col justify-between items-center professional-img-container"
         >
           <img class="w-75 image-legacy" src="./pics/img1.png" alt="img1" />
           <img class="w-75 image-legacy" src="./pics/img2.png" alt="img2" />
@@ -887,11 +689,11 @@
       </div>
       <!-- accordion fight record -->
       <div
-        class="d-flex flex-column gap-2 accordion-container"
+        class="flex flex-col gap-2 accordion-container"
         style="background-color: #f8f8f8; padding: 50px 50px"
       >
         <div
-          class="d-flex align-items-center justify-content-between border-bottom"
+          class="flex items-center justify-between border-b"
         >
           <h2 style="font-size: 24px; font-family: 'akira expanded'">
             Muhammad Ali Fight Record
@@ -915,8 +717,12 @@
         </div>
         <div class="overflow-auto" style="width: 100%">
           <table
-            style="min-width: 1271px;border: 1.5px solid #ccc;background-color: #f1f5f9;"
-            class="table"
+            style="
+              min-width: 1271px;
+              border: 1.5px solid #ccc;
+              background-color: #f1f5f9;
+            "
+            class="table-auto"
             id="toShow"
           >
             <thead class="trFirst">
@@ -1183,7 +989,7 @@
         </div>
 
         <div
-          class="d-flex align-items-center justify-content-between image-container-display border-bottom"
+          class="flex items-center justify-between image-container-display border-b"
         >
           <h2 style="font-size: 24px; font-family: 'akira expanded'">
             BOXERS OF THE GOLD AGE
@@ -1209,7 +1015,7 @@
         <div id="imageDiv" style="width: 100%">
           <!--images div-->
           <div
-            class="d-flex gap-2 align-items-center justify-content-center"
+            class="flex gap-2 items-center justify-center"
             style="flex-wrap: wrap"
           >
             <div style="width: 15%; border: 1px solid #ddd">
@@ -1366,8 +1172,8 @@
         </div>
       </div>
 
-      <div style="padding: 0 5%" class=" bottom-nav">
-        <div class="d-flex" style="width: 100%">
+      <div style="padding: 0 5%" class="bottom-nav">
+        <div class="flex" style="width: 100%">
           <div style="width: 30%; padding: 7% 2%">
             <a href="#"><img src="../src/pics/logo.svg" alt="" /></a>
           </div>
@@ -1395,7 +1201,7 @@
           </div>
         </div>
         <div
-          class="d-flex gap-3 border-bottom"
+          class="flex gap-3 border-b"
           style="padding-bottom: 20px; padding-left: 2%"
         >
           <a href="#"
@@ -1419,13 +1225,13 @@
         </div>
         <div
           style="padding: 20px 2%; color: #606060; width: 100%"
-          class="d-flex justify-content-between"
+          class="flex justify-between"
         >
           <!-- bottom -->
           <h2 style="font-size: 1rem">@ SERP</h2>
           <div>
             <ul
-              class="d-flex align-items-center gap-4"
+              class="flex items-center gap-4"
               style="list-style: none"
             >
               <a href="#" style="color: #606060; text-decoration: none"
@@ -1445,6 +1251,5 @@
         </div>
       </div>
     </main>
-    <script src="../style/boot.js"></script>
   </body>
 </html>
