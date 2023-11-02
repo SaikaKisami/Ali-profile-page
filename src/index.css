@@ -201,98 +201,294 @@ tbody>tr>th {
 }
 
 /* media screens */
-
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    gap: 30px;
   }
 
-  .nav-bar-display {
-    width: 3791px;
+  .headerContainer {
+    height: 80%;
   }
 
-  .second-section {
-    width: 5791.75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .headerImageContainer {
+    height: 80%;
   }
 
-  .second-card-container {
-    width: 5791.75px;
-    margin-top: 5%;
+  .abotut-text>h1 {
+    font-size: 50px !important;
   }
 
-  .third-section {
-    width: 5791.75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .abotut-text>div>h3 {
+    font-size: 44px !important;
   }
 
-  .aboutContainer {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .winText {
+    font-size: 52px !important;
   }
 
-  .famous-card {
-    width: auto;
+  .winSpan {
+    font-size: 35px !important;
   }
 
-  .professional-section {
-    width: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+  .othersText>p {
+    font-size: 36px !important;
   }
 
-  .accordion-container {
-    width: 5791.75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
+  .image-container>img {
+    width: 800px !important;
   }
 
-  .image-container-display {
-    margin-top: 5%;
+  .text-container>h2 {
+    font-size: 44px !important;
   }
 
-  .bottom-nav {
-    width: 5791.75px;
+  .text-container>p {
+    font-size: 30px !important;
   }
 
-  .legacy-container {
-
-    width: 5791.75px;
+  .blue-section-text>h2 {
+    font-size: 34px !important;
   }
 
-  .image-legacy {
-    width: 100% !important;
+  .blue-section-text>p {
+    font-size: 30px !important;
+  }
+
+  .champCont>h2 {
+    font-size: 40px !important;
+  }
+
+  .champCont>p {
+    font-size: 38px !important;
+  }
+
+  .famText>h2 {
+    font-size: 40px !important;
+  }
+
+  .famText>p {
+    font-size: 30px !important;
+  }
+
+  .legacy-text-container>h2 {
+    font-size: 38px !important;
+  }
+
+  .legacy-text-container>p {
+    font-size: 40px !important;
+  }
+
+  .legacyText>h2 {
+    font-size: 44px !important;
+  }
+
+  .legacyText>p {
+    font-size: 40px !important;
+  }
+
+  .professional-text-wrapper>h2 {
+    font-size: 44px !important;
+  }
+
+  .professional-text-wrapper>p {
+    font-size: 40px !important;
   }
 
   .professional-img-container {
-    display: flex;
-    flex-direction: column;
-    gap: 100px !important;
+    gap: 10px !important;
   }
 
-  .legacy-text-container {
-    display: flex;
-    height: 4187.29px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .professional-img-container>img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .dropdown-toggle {
+    font-size: 30px !important;
+  }
+
+  .dropUl>svg {
+    height: 30px !important;
+    width: 30px !important;
+  } 
+  .image-container-display>h2 {
+    font-size: 40px !important;
+  }
+
+  .image-container-display>h1 {
+    font-size: 36px !important;
+  }
+
+  th, td {
+    font-size: 30px !important;
+  }
+
+  .imageCont>h1 {
+    font-size: 30px !important;
+  }
+
+  .ulDislpay>a {
+    font-size: 30px !important;
+  }
+
+  .serp {
+    font-size: 36px !important;
+  }
+
+  .serpCon>ul>a {
+    font-size: 30px !important;
+  }
+
+  .serpCon>ul {
+    gap: 20px !important;
+  }
+}
+@media (min-width: 3000px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .headerContainer {
+    height: 80%;
+  }
+
+  .headerImageContainer {
+    height: 80%;
+  }
+
+  .abotut-text>h1 {
+    font-size: 70px !important;
+  }
+
+  .abotut-text>div>h3 {
+    font-size: 64px !important;
+  }
+
+  .winText {
+    font-size: 72px !important;
+  }
+
+  .winSpan {
+    font-size: 55px !important;
+  }
+
+  .othersText>p {
+    font-size: 56px !important;
+  }
+
+  .image-container>img {
+    width: 800px !important;
+  }
+
+  .text-container>h2 {
+    font-size: 64px !important;
+  }
+
+  .text-container>p {
+    font-size: 50px !important;
+  }
+
+  .blue-section-text>h2 {
+    font-size: 54px !important;
+  }
+
+  .blue-section-text>p {
+    font-size: 50px !important;
+  }
+
+  .champCont>h2 {
+    font-size: 60px !important;
+  }
+
+  .champCont>p {
+    font-size: 58px !important;
+  }
+
+  .famText>h2 {
+    font-size: 60px !important;
+  }
+
+  .famText>p {
+    font-size: 50px !important;
+  }
+
+  .legacy-text-container>h2 {
+    font-size: 58px !important;
+  }
+
+  .legacy-text-container>p {
+    font-size: 60px !important;
+  }
+
+  .legacyText>h2 {
+    font-size: 64px !important;
+  }
+
+  .legacyText>p {
+    font-size: 60px !important;
+  }
+
+  .professional-text-wrapper>h2 {
+    font-size: 64px !important;
+  }
+
+  .professional-text-wrapper>p {
+    font-size: 60px !important;
+  }
+
+  .professional-img-container {
+    gap: 10px !important;
+  }
+
+  .professional-img-container>img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .dropdown-toggle {
+    font-size: 50px !important;
+  }
+
+  .dropUl>svg {
+    height: 30px !important;
+    width: 30px !important;
+  } 
+  .image-container-display>h2 {
+    font-size: 60px !important;
+  }
+
+  .image-container-display>h1 {
+    font-size: 56px !important;
+  }
+
+  th, td {
+    font-size: 50px !important;
+  }
+
+  .imageCont>h1 {
+    font-size: 50px !important;
+  }
+
+  .ulDislpay>a {
+    font-size: 50px !important;
+  }
+
+  .serp {
+    font-size: 56px !important;
+  }
+
+  .serpCon>ul>a {
+    font-size: 50px !important;
+  }
+
+  .serpCon>ul {
+    gap: 20px !important;
   }
 }
 

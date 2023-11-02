@@ -16,13 +16,17 @@
     <script src="./index.js"></script>
   </head>
   <body>
-    <main>
-      <nav class="bg-white border-b border-gray-200 lg:px-4 flex">
+    <main style="" class="flex flex-col">
+      <nav
+        style="width: 100%"
+        class="bg-white border-b border-gray-200 lg:px-4 flex"
+      >
         <div
-          class="container flex items-center py-5 justify-between items-center mx-auto px-0"
+          class="flex py-5 justify-between mx-auto xl:mx-0 px-0"
+          style="width: 100%; flex: 1"
         >
           <div class="flex items-center gap-10">
-            <a class="flex items-center" href="/"
+            <a class="flex px-4 md:px-0 items-center" href="/"
               ><img
                 src="./pics/logo.svg"
                 style="width: 35px"
@@ -31,8 +35,8 @@
                 class="logo-inverse"
                 height="75"
             /></a>
-            <ul class="flex items-center gap-5">
-              <li class="flex items-center gap-1">
+            <ul class="hidden md:flex items-center gap-5">
+              <li class="flex items-center gap-1 dropUl">
                 <a
                   class="nav-link dropdown-toggle"
                   id="navbarSingle"
@@ -58,7 +62,7 @@
                   />
                 </svg>
               </li>
-              <li class="flex items-center gap-1">
+              <li class="flex items-center gap-1 dropUl">
                 <a
                   class="nav-link dropdown-toggle"
                   id="navbarSingle"
@@ -84,7 +88,7 @@
                   />
                 </svg>
               </li>
-              <li class="flex items-center gap-1">
+              <li class="flex items-center gap-1 dropUl">
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
@@ -188,7 +192,7 @@
       </nav>
 
       <div class="relative mainContainer">
-        <div class="block lg:flex" style="height: 100%;">
+        <div class="block lg:flex" style="height: 100%">
           <div
             class="headerContainer hidden lg:flex justify-center items-center bgcolor"
           >
@@ -202,7 +206,7 @@
           >
             <div
               class="flex flex-col justify-center items-center lg:hidden bgcolor"
-              style="height: 100%;width: 100%;"
+              style="height: 100%; width: 100%"
             >
               <h1 class="mainHeader text-white text-center">MUHAMMAD ALI</h1>
               <h2 class="subheader">"THE GREATEST"</h2>
@@ -223,7 +227,7 @@
         <div class="flex px-5 py-5 gap-5 aboutContainer">
           <div
             class="flex flex-col items-center"
-            style="gap: 70px; width: 20px"
+            style="gap: 70px; width: winText 5%"
           >
             <img
               style="width: 5px; height: 70px"
@@ -240,7 +244,10 @@
               >Muhammad <span> Ali</span></span
             >
           </div>
-          <div class="flex flex-col gap-5 lg:px-5">
+          <div
+            class="flex flex-col gap-5 lg:px-5 abotut-text"
+            style="width: 95%"
+          >
             <h1
               style="
                 font-family: 'akira Expanded';
@@ -281,39 +288,59 @@
               class="aboutmuhamedImg"
             />
             <!-- stats -->
-            <div style="width: 100%;" class="bg-white">
+            <div style="width: 100%" class="bg-white">
               <div
-                class="flex justify-between px-3 py-3"
+                class="flex flex-col md:flex-row justify-between px-3 py-3"
                 style="font-family: 'akira Expanded'"
               >
                 <div class="flex flex-col items-center">
-                  <h4 class="m-0" style="font-size: 32px; color: #000">56</h4>
-                  <h4 class="m-0" style="font-size: 15px; color: #2a9041">
+                  <h4 class="m-0 winText" style="font-size: 32px; color: #000">
+                    56
+                  </h4>
+                  <h4
+                    class="m-0 winSpan"
+                    style="font-size: 15px; color: #2a9041"
+                  >
                     WINS
                   </h4>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h4 class="m-0" style="font-size: 32px; color: #000">5</h4>
-                  <h4 class="m-0" style="font-size: 15px; color: #c94a4a">
+                  <h4 class="m-0 winText" style="font-size: 32px; color: #000">
+                    5
+                  </h4>
+                  <h4
+                    class="m-0 winSpan"
+                    style="font-size: 15px; color: #c94a4a"
+                  >
                     LOSES
                   </h4>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h4 class="m-0" style="font-size: 32px; color: #000">0</h4>
-                  <h4 class="m-0" style="font-size: 15px; color: #bf9501">
+                  <h4 class="m-0 winText" style="font-size: 32px; color: #000">
+                    0
+                  </h4>
+                  <h4
+                    class="m-0 winSpan"
+                    style="font-size: 15px; color: #bf9501"
+                  >
                     DRAWS
                   </h4>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h4 class="m-0" style="font-size: 32px; color: #000">0</h4>
-                  <h4 class="m-0" style="font-size: 15px; color: #606060">
+                  <h4 class="m-0 winText" style="font-size: 32px; color: #000">
+                    0
+                  </h4>
+                  <h4
+                    class="m-0 winSpan"
+                    style="font-size: 15px; color: #606060"
+                  >
                     KO%
                   </h4>
                 </div>
               </div>
               <!-- others -->
               <div class="flex justify-between px-3 mt-2">
-                <div>
+                <div class="othersText">
                   <p style="font-size: 16px; font-weight: 500">
                     Debut:
                     <span style="color: #555555; font-weight: 400"
@@ -325,7 +352,7 @@
                     <span style="color: #555555; font-weight: 400">61</span>
                   </p>
                 </div>
-                <div>
+                <div class="othersText">
                   <p style="font-size: 16px; font-weight: 500">
                     Nationality:
                     <span style="color: #555555; font-weight: 400">USA</span>
@@ -346,9 +373,7 @@
         />
       </div>
       <!-- another section -->
-      <div
-        class="justify-between relative second-card-container"
-      >
+      <div class="justify-between relative second-card-container">
         <div class="text-center image-container">
           <img src="./pics/muhamedaliFirst.png" alt="muhamedaliFirst" />
         </div>
@@ -375,11 +400,9 @@
         </div>
       </div>
       <!--blue section -->
-      <div
-        class="block lg:flex justify-between text-white blue-section"
-      >
+      <div class="block lg:flex justify-between text-white blue-section">
         <div class="blue-section-text">
-          <h2 style="font-family: 'akira expanded'; font-size: 24px">
+          <h2 class="text-sm" style="font-family: 'akira expanded'">
             Professional Boxing Career
           </h2>
           <p>
@@ -412,7 +435,7 @@
           <!-- famous card -->
           <div class="famous-card">
             <img style="width: 100%" src="./pics/famous.png" alt="famousImg" />
-            <div class="px-4 py-3" style="font-size: 14px">
+            <div class="famText px-4 py-3" style="font-size: 14px">
               <h2
                 style="
                   font-family: 'akira expanded';
@@ -421,6 +444,7 @@
                   text-transform: uppercase;
                   font-weight: 600;
                 "
+                class=""
               >
                 Famous Matches
               </h2>
@@ -436,9 +460,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="relative flex justify-end famous-text-container"
-        >
+        <div class="relative flex justify-end famous-text-container">
           <div
             class="bg-white end-0 py-5 px-3 flex justify-between famous-text"
           >
@@ -461,11 +483,11 @@
                 >career</span
               >
             </div>
-            <div class="" style="padding: 0px 50px; width: 95%">
+            <div class="champCont" style="padding: 0px 50px; width: 95%">
               <h2
+                class="text-sm md:text-xl"
                 style="
                   font-family: 'akira expanded';
-                  font-size: 24px;
                   margin-bottom: 20px;
                   width: 100%;
                 "
@@ -517,7 +539,7 @@
           />
         </div>
         <div class="legacy-text-container" style="padding: 0px 70px">
-          <h2 style="font-family: 'akira expanded'; font-size: 24px">
+          <h2 style="font-family: 'akira expanded'" class="text-sm md:text-lg">
             Parkinson's Syndrome and Legacy
           </h2>
           <p style="font-size: 20px">
@@ -557,7 +579,7 @@
                 >Awards</span
               >
             </div>
-            <div class="" style="padding: 0 50px">
+            <div class="legacyText" style="padding: 0 50px">
               <h2
                 class=""
                 style="font-size: 24px; font-family: 'akira expanded'"
@@ -582,7 +604,7 @@
         class="flex flex-col-reverse flex-col lg:flex-row justify-center lg:justify-between pt-5 professional-section"
       >
         <div class="px-3 mt-5 lg:mt-0 professional-text-wrapper">
-          <h2 style="font-size: 24px; font-family: 'akira expanded'">
+          <h2 class="text-sm md:text-xl" style="font-family: 'akira expanded'">
             Professional Boxing Career
           </h2>
           <p>
@@ -680,7 +702,7 @@
           </p>
         </div>
         <div
-          class="flex gap-5 lg:gap-0 flex-col justify-between items-center professional-img-container"
+          class="flex gap-5 lg:gap-0 flex-col items-center professional-img-container"
         >
           <img class="w-75 image-legacy" src="./pics/img1.png" alt="img1" />
           <img class="w-75 image-legacy" src="./pics/img2.png" alt="img2" />
@@ -693,13 +715,13 @@
         style="background-color: #f8f8f8; padding: 50px 50px"
       >
         <div
-          class="flex items-center justify-between border-b"
+          class="flex image-container-display items-center max-w-full justify-between border-b"
         >
-          <h2 style="font-size: 24px; font-family: 'akira expanded'">
+          <h2 class="text-sm md:text-xl" style="font-family: 'akira expanded'">
             Muhammad Ali Fight Record
           </h2>
           <h1
-            class=""
+            class="cursor-pointer"
             style="
               font-size: 16px;
               display: flex;
@@ -992,11 +1014,11 @@
         <div
           class="flex items-center justify-between image-container-display border-b"
         >
-          <h2 style="font-size: 24px; font-family: 'akira expanded'">
+          <h2 class="text-sm md:text-xl" style="font-family: 'akira expanded'">
             BOXERS OF THE GOLD AGE
           </h2>
           <h1
-            class=""
+            class="cursor-pointer"
             style="
               font-size: 16px;
               display: flex;
@@ -1016,10 +1038,13 @@
         <div id="imageDiv" style="width: 100%">
           <!--images div-->
           <div
-            class="flex gap-2 items-center justify-center"
+            class="flex flex-col md:flex-row gap-2 items-center justify-center"
             style="flex-wrap: wrap"
           >
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1029,7 +1054,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1039,7 +1067,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1049,7 +1080,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1059,7 +1093,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1069,7 +1106,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1079,7 +1119,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1089,7 +1132,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1099,7 +1145,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1109,7 +1158,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1119,7 +1171,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1129,7 +1184,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1139,7 +1197,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div class="extraImages" style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="extraImages w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1149,7 +1210,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div class="extraImages" style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="extraImages w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1159,7 +1223,10 @@
                 JOE JOYCE
               </h1>
             </div>
-            <div class="extraImages" style="width: 15%; border: 1px solid #ddd">
+            <div
+              class="extraImages w-full md:w-1/4 lg:w-1/6 imageCont"
+              style="border: 1px solid #ddd"
+            >
               <img
                 style="width: 100%; object-fit: contain"
                 src="../src/pics/img1.avif"
@@ -1174,20 +1241,18 @@
       </div>
 
       <div style="padding: 0 5%" class="bottom-nav">
-        <div class="flex" style="width: 100%">
+        <div
+          class="flex items-center justify-center md:items-start md:justify-start"
+          style="width: 100%"
+        >
           <div style="width: 30%; padding: 7% 2%">
             <a href="#"><img src="../src/pics/logo.svg" alt="" /></a>
           </div>
 
           <div style="padding-top: 2%">
             <ul
-              style="
-                color: #606060;
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-              "
+              class="flex flex-row md:flex-col ulDislpay"
+              style="color: #606060; list-style: none; gap: 10px"
             >
               <a href="#" style="color: #606060; text-decoration: none"
                 ><li>About</li></a
@@ -1202,7 +1267,7 @@
           </div>
         </div>
         <div
-          class="flex gap-3 border-b"
+          class="flex gap-3 border-b items-center justify-center md:items-start md:justify-start"
           style="padding-bottom: 20px; padding-left: 2%"
         >
           <a href="#"
@@ -1226,13 +1291,13 @@
         </div>
         <div
           style="padding: 20px 2%; color: #606060; width: 100%"
-          class="flex justify-between"
+          class="flex justify-between flex-col md:flex-row"
         >
           <!-- bottom -->
-          <h2 style="font-size: 1rem">@ SERP</h2>
-          <div>
+          <h2 style="font-size: 1rem" class="serp">@ SERP</h2>
+          <div class="serpCon">
             <ul
-              class="flex items-center gap-4"
+              class="flex sm:items-center gap-4 flex-col md:flex-row"
               style="list-style: none"
             >
               <a href="#" style="color: #606060; text-decoration: none"
